@@ -1,0 +1,147 @@
+ body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    display: flex;
+}
+ *{
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.menu{
+    background-color: #123;
+    width: 100px;
+    height: auto;
+   
+    overflow: hidden;
+}
+ul{
+   list-style-type: none;
+   position: relative;
+   height: 100%;
+   margin: 0px;
+   padding: 10px;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 0 23px;
+    margin: 5px  ;
+    border-radius: 8px; 
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    transition: .5s;
+}
+ul li a:hover , .active , .data-info .box:hover , td:hover{
+    background-color: rgb(133, 131, 131);
+}
+.logout a{ 
+    background-color: #a00;
+    padding:  0 15px  ;
+    margin: 20px;
+    gap: 50px;
+}
+.logout{
+    position: absolute;
+    bottom: 5px;
+    width: 85%;
+    margin: 0 ;
+}
+ul li a i{
+    font-size: 18px;
+}
+.img{
+width: 50px;
+height: 50px;
+margin:  4px 2px 5px 12px ;
+padding:  0  ;
+border-radius: 50%;
+overflow: hidden;
+border: 2px solid white;
+flex-shrink: 0;
+}
+.img img{
+    width: 100%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.name{
+    text-transform: capitalize; 
+}
+.menu:hover{
+    width: 360px;
+    transition: .5s;
+ }
+.content{
+    margin: 5px  ;
+    padding: 5px  ;
+    flex-grow: 1;
+}
+ .title-info{
+  display: flex;
+  align-items: center;
+  padding: 0 5px ;
+  margin: 8px 0;
+  justify-content: space-between;
+  background-color: rgb(49, 49, 227);
+  border-radius: 10px;
+ }
+ .title-info p{
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial ;
+ }
+ .data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ }
+ .data-info .box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #123;
+    border-radius: 10px;
+    height: 160px;
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin: 5px;
+    justify-content: space-around;
+ }
+  .data-info .box i{
+    font-size: 40px;
+  }
+  .data-info .box .data{
+    text-align: center;
+  }
+  .data-info .box .data span{
+    font-size: 30px;
+  }
+  table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 5px;
+  }
+  td,th{
+    background-color: #123;
+    height: 40px;
+    border-radius: 8px;
+  }
+  table thead th {
+    background-color: #0c5fd3;
+  }
+  .price , .count{
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .price{
+    background-color: green;
+  }
+  .count{
+    background-color: gold;
+    color: black;
+  }
+  
